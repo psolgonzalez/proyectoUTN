@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <enlace href="https: //fonts.googleapis.com/css2? family= Bebas+Neue & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">    
+</head>
+<body>
+    <h2 class="titulo" id="navbar">
+        <img class="logoImport" src="../assets/logo.png" alt="logo">
+        <b>Accede a Nuestros Productos Online</b>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    </h2>
+    <br>
+    <!-- formulario 1 -->
+    <form id="registerform">
+        <div class="mb-3 container">
+            <label for="" class="form-label">Usuario</label>
+            <input type="email" class="form-control" placeholder="elemplo@mail.com" name="usuario" id="usuario"
+                aria-describedby="emailHelp" required>
+        </div>
+
+        <div class="mb-3 container">
+            <label for="" class="form-label">Contraseña</label>
+            <input type="password" pattern=".{6,}" class="form-control" name="pass" id="pass" required>
+        </div>
+        <div class="boton">
+            <button id="btnImport" class="btn btn-secondary" type="submit" name="submit" value="">
+                Continuar como invitado
+            </button>
+        </div>
+    </form>
+    <article>
+        <h2 id="subtitulo">Suscribete</h2>
+        <div class="flecha"> 
+            <img src="../assets/imgFlecha.png" alt="imagen flecha">
+        </div>
+    </article>
+
+    <div class="suscripcion">
+        <h3>
+            Registrate como CLIENTE VIP y recibe ofertas especiales
+        </h3>
+        <button class="btnbtn" type="button" onclick="window.location.href='./usuarios.html'">Quiero
+            suscribirme</button>
+    </div>
+    <footer>
+        <footer id="footer" class="bd-footer py-4 py-md-5 mt-5">
+            <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+                <div class="row">
+                    <div class="col-lg-3 mb-3">
+                        <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
+                            href="../index.html" aria-label="Bootstrap">
+                            <div>
+                                <img class="logoImport" src="../assets/logo.png" alt="logo">
+                            </div>
+                        </a>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2">Calidad y precio nos define! <a href="api.html">Koto team</a> <br>
+                                Quality and price define us!
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-5 offset-lg-1 mb-3">
+                        <h5>Sucursales</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="https://acortar.link/AbgqEB">Morón, Buenos Aires</a></li>
+                            <li class="mb-2"><a href="https://acortar.link/MuwZ4W">Bella Vista Buenos Aires</a></li>
+                            <li class="mb-2"><a href="https://acortar.link/NAQF7n"> Av. Perú y Pellegrini Carlos Mendoza</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-lg-2 mb-3">
+                        <h5>Descubre Koto</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="../pages/ofertas.html">Ofertas</a></li>
+                            <li class="mb-2"><a href="../pages/ofertas.html">Catalogo</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class=" col-lg-3 ">
+                        <h5>Seguinos en nuestras redes:</h5>
+                        <div id="icons" class="d-grid gap-2 d-md-block">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <button class="btn btn 2">
+                                    <i class="bi bi-instagram"></i>
+                                </button></a>
+                            <a href="https://es-la.facebook.com/" target="_blank">
+                                <button class="btn btn 2">
+                                    <i class="bi bi-facebook"></i>
+                                </button></a>
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <button class="btn btn 2">
+                                    <i class="bi bi-youtube"></i>
+                                </button></a>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <button class="btn btn ">
+                                    <i class="bi bi-linkedin"></i>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="../js/formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

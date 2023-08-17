@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=,initial-scale=1.0">
+  <title>Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/productos.css">
+
+
+</head>
+<body>
+  <!-- navbar  -->
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div>
+        <img class="logo" src="../assets/logo.png" alt="logo">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="./ofertas.html">Ofertas</a>
+        </div>
+      </div>
+      <div>
+        <h2><i> Calidad y precio nos define!</i></h2>
+      </div>
+    </div>
+  </nav>
+  <!-- form -->
+  <main class="main">
+    <form>
+      <legend>Ingrese aquí sus Productos:</legend>
+      <div class="container">
+        <div class="mb-3">
+          <input type="text" id="idproducto" class="form-control" placeholder="Producto">
+        </div>
+        <div class="mb-3">
+          <input type="number" id="idprecio" class="form-control" placeholder="Precio">
+        </div>
+      </div>
+      <button type="button"  onclick="cargarProducto()" class="btn btn-primary">Cargar</button>
+      <button type="reset" class="btn btn-secondary m-lg-4">Borrar</button>
+    </form>
+    <!-- tabla -->
+
+    <div class="container">
+      <table class="table table-striped">
+        <thead> 
+          <tr>
+            <td>Nombre del Producto</td>
+            <td>Precio del Producto</td>
+          </tr>
+          <h3>Tu lista de tus productos</h3>
+        </thead>
+        <tbody id="tablaProductos">
+        </tbody>
+      </table>
+      </div>
+  </main>
+
+  <!-- section -->
+  <section>
+    <div id="cartas" class="row row-cols-5 row-cols-md-5 g-1">
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/11.webp" class="card-img-top" alt="Oreo">
+          <div class="card-body">
+            <h5 class="card-title">Mini OREO </h5>
+            <p class="card-text">Galletitas Dulces Mini OREO 50Gr. <b>$81 </b><del>$124</del></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/10.webp" class="card-img-top" alt="Traviatas">
+          <div class="card-body">
+            <h5 class="card-title">Traviata</h5>
+            <p class="card-text">Gall.Sandwic. Traviata Paq 303Gr. <b>$526,96</b></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/12.webp" class="card-img-top" alt="Yerba">
+          <div class="card-body">
+            <h5 class="card-title">Yerba</h5>
+            <p class="card-text">Yerba Mate Playadito Suave X1kg. <b>$907 </b></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/13.webp" class="card-img-top" alt="Fideos">
+          <div class="card-body">
+            <h5 class="card-title">Matarazzo</h5>
+            <p class="card-text">Fideos Codito Matarazzo X500Gr.<b>$259</b></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/14.webp" class="card-img-top" alt="Lucchetti">
+          <div class="card-body">
+            <h5 class="card-title">Lucchetti</h5>
+            <p class="card-text">Fideos Tirabuzón X500Gr <b> $400,00</b></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/15.webp" class="card-img-top" alt="Fideos">
+          <div class="card-body">
+            <h5 class="card-title">Favorita</h5>
+            <p class="card-text">Fideos Spaghetti Hierro X500g <b>$145</b><del>$200</del></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/16.webp" class="card-img-top" alt="Café">
+          <div class="card-body">
+            <h5 class="card-title">Café</h5>
+            <p class="card-text">Nescafé® Descafeinado X 100Gr <b> $1.193</b></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/17.webp" class="card-img-top" alt="Harina">
+          <div class="card-body">
+            <h5 class="card-title">Harina Morixe</h5>
+            <p class="card-text">Harina Leudante Morixe 1Kg.<b> $280 </b><del>$300</del></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/18.webp" class="card-img-top" alt="Cerveza">
+          <div class="card-body">
+            <h5 class="card-title">Cerveza</h5>
+            <p class="card-text">Cerveza Andes Origen Fourpack <b>$1530 </b><del> $1800</del></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/19.webp" class="card-img-top" alt="Novecento">
+          <div class="card-body">
+            <h5 class="card-title">Novecento</h5>
+            <p class="card-text">Espumante Novecento Extra Brut 750Cc <b>$1.375 </b></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/20.webp" class="card-img-top" alt="Coca-cola">
+          <div class="card-body">
+            <h5 class="card-title">Coca-cola</h5>
+            <p class="card-text">Gaseosa Coca-cola Sabor Original 2.25L</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/21.webp" class="card-img-top" alt="Vino tinto">
+          <div class="card-body">
+            <h5 class="card-title">Vino tinto</h5>
+            <p class="card-text">Vino Perro Callejero Malbec <b>$2.176 </b><del>$2500</del></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/22.webp" class="card-img-top" alt="Dulce De Leche">
+          <div class="card-body">
+            <h5 class="card-title">Dulce De Leche</h5>
+            <p class="card-text">Dulce De Leche La Serenisima 400Gr. <b>$537</b></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/23.webp" class="card-img-top" alt="Leche Uat">
+          <div class="card-body">
+            <h5 class="card-title">Leche Uat</h5>
+            <p class="card-text">Leche Uat La Serenisima Botella 1l <b>$463</b><del>$480</del></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/assetaProductos/24.webp" class="card-img-top" alt="Ketchup">
+          <div class="card-body">
+            <h5 class="card-title">Ketchup</h5>
+            <p class="card-text">Aderezo Ketchup Natura 250Gr <b> $262</b></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer id="footer" class="bd-footer py-4 py-md-5 mt-5">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
+                        href="../index.html" aria-label="Bootstrap">
+                        <div>
+                            <img class="logo" src="../assets/logo.png" alt="logo">
+                        </div>
+                    </a>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">Calidad y precio nos define! <a href="../pages/api.html">Koto team</a> <br>
+                            Quality and price define us!
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-5 offset-lg-1 mb-3">
+                    <h5>Sucursales</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://acortar.link/AbgqEB">Morón, Buenos Aires</a></li>
+                        <li class="mb-2"><a href="https://acortar.link/MuwZ4W">Bella Vista Buenos Aires</a></li>
+                        <li class="mb-2"><a href="https://acortar.link/NAQF7n"> Av. Perú y Pellegrini Carlos Mendoza</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-lg-2 mb-3">
+                    <h5>Descubre Koto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../pages/ofertas.html">Ofertas</a></li>
+                        <li class="mb-2"><a href="../pages/ofertas.html">Catalogo</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class=" col-lg-3 ">
+                    <h5>Seguinos en nuestras redes:</h5>
+                    <div id="icons" class="d-grid gap-2 d-md-block">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <button class="btn btn">
+                                <i class="bi bi-instagram"></i>
+                            </button></a>
+                        <a href="https://es-la.facebook.com/" target="_blank">
+                            <button class="btn btn">
+                                <i class="bi bi-facebook"></i>
+                            </button></a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <button class="btn btn">
+                                <i class="bi bi-youtube"></i>
+                            </button></a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <button class="btn btn">
+                                <i class="bi bi-linkedin"></i>
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="../js/productos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

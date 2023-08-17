@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background-color: rgb(183, 187, 209);
+}
+
+.logo{
+    width: 100px;
+    height: 60px;
+    margin-left : 15px;
+}
+
+
+.card{
+    padding: 30px;
+    display:block;
+    text-align: center;
+}
+
+.fyv{
+    margin-left: 20%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.perfumeria{
+margin-left: 7%;
+margin-bottom:20px ;
+}
+.card-group{
+        padding:30px 100px 10px 100px ;
+        border-bottom: 10px;
+}
+
+.dove{
+    max-width: 100%;
+    height: auto;
+    box-shadow: 10px 8px 3px 3px rgb(183, 187, 209);
+}
+
+@media (max-width: 768px) {
+    .pc {
+      max-width: 90%;
+      height: auto;
+    }
+}
+ 
+#footer{
+    background-color: rgb(183, 187, 209);
+}
+
+#logo{
+    font-size: #212529;
+}
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar{
+    padding: 30px;
+    background-color:rgb(183, 187, 209);
+}
+
+.logo{
+    width: 100px;
+    height: 60px;
+    margin-left : 15px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    
+}
+
+.table{
+    background-color: rgb(75, 70, 82);
+}
+
+
+
+#cartas{
+    padding: 20px;
+    padding-bottom: 50px;
+    
+}
+
+#footer{
+    background-color: rgb(183, 187, 209);
+}
+
+#logo{
+    font-size: #212529;
+}
+
+

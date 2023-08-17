@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar{
+    padding: 30px;
+}
+
+
+
+.titulo {
+
+    background-color:rgb(183, 187, 209);;
+}
+
+.logoImport{
+    width: 100px;
+    height: 60px;
+    margin-left : 15px;
+}
+
+
+#registerform{
+    width: 30% auto;
+}
+
+#btnImport{
+    background-color: #5C1DB8;   
+    margin-left: 9%;
+    color: beige;
+}
+
+#subtitulo{
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.flecha{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.suscripcion{
+    margin-top: 200px;
+    padding: 60px;
+    background-color: #5C1DB8;
+    font: 18px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: beige;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btnbtn{
+    padding: 3px;
+    border-radius: 10px;
+    margin-right: 25%;
+    width: 200px;
+    font-size: 20PX;
+
+}
+#footer{
+    background-color: rgb(183, 187, 209);
+}
+
+#logo{
+    font-size: #212529;
+}

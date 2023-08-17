@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar{
+    padding: 30px;
+    background-color:rgb(183, 187, 209);
+}
+
+.logo{
+    width: 100px;
+    height: 60px;
+    margin-left : 15px;
+}
+
+
+
+.container{
+    width: 30%;
+    margin-left: 10px;
+} 
+
+#title{
+    background-color:  #5C1DB8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+}
+#footer{
+    background-color: rgb(183, 187, 209);
+    padding-top: 30px;
+    
+}
+
+#logo{
+    font-size: #212529;
+}
+

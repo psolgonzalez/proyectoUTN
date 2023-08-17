@@ -1,4 +1,4 @@
-# proyectoUTN
+# proyectoUTN Supermercado Koto
 
 ## Diplomatura en Programación Web Full Stack Developer - UTN
 
